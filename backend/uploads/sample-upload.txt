@@ -1,0 +1,1 @@
+Customer report: The new dashboard export is delayed because the sync job is failing after the latest release. Follow-up needed from support and engineering.
