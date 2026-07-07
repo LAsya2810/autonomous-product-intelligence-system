@@ -22,7 +22,7 @@ const COLORS = [
 
 function AnalyticsPage() {
   const backendUrl = useMemo(
-    () => import.meta.env.VITE_BACKEND_URL || "http://https://autonomous-product-intelligence-system.onrender.com",
+    () => import.meta.env.VITE_BACKEND_URL || "https://autonomous-product-intelligence-system.onrender.comautonomous-product-intelligence-system.onrender.comhttps://autonomous-product-intelligence-system.onrender.com",
     []
   );
 

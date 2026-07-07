@@ -15,7 +15,7 @@
 cd backend
 py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m uvicorn app:app --host http://autonomous-product-intelligence-system.onrender.com --port 8000
+.\.venv\Scripts\python.exe -m uvicorn app:app --host https://autonomous-product-intelligence-system.onrender.comautonomous-product-intelligence-system.onrender.comautonomous-product-intelligence-system.onrender.com --port 8000
 ```
 
 ### Frontend
@@ -26,7 +26,7 @@ npm install
 npm run dev -- --host 0.0.0.0 --port 5173
 ```
 
-Open http://localhost:5173/ to view the app.
+Open https://autonomous-product-intelligence-system.onrender.comautonomous-product-intelligence-system.onrender.comlocalhost:5173/ to view the app.
 
 ### Generate sample documents
 
