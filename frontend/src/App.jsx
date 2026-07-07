@@ -46,7 +46,7 @@ function App() {
   }, [location.pathname]);
 
   useEffect(() => {
-    const endpoint = import.meta.env.VITE_BACKEND_URL || 'https://autonomous-product-intelligence-system.onrender.comautonomous-product-intelligence-system.onrender.comhttps://autonomous-product-intelligence-system.onrender.com/health';
+    const endpoint = import.meta.env.VITE_BACKEND_URL || 'https://autonomous-product-intelligence-system.onrender.com'
 
     fetch(endpoint)
       .then((response) => {
