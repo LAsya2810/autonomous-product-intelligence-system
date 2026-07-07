@@ -74,7 +74,7 @@ Frontend:
 
 Backend:
 - FastAPI
-- SQLite
+- SQLite.
 
 AI:
 - OpenAI
