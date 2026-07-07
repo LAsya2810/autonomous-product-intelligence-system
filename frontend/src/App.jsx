@@ -46,7 +46,7 @@ function App() {
   }, [location.pathname]);
 
   useEffect(() => {
-    const endpoint = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000/health';
+    const endpoint = import.meta.env.VITE_BACKEND_URL || 'http://https://autonomous-product-intelligence-system.onrender.com/health';
 
     fetch(endpoint)
       .then((response) => {

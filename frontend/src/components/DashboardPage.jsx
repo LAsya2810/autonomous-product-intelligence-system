@@ -9,7 +9,7 @@ import {
 
 function DashboardPage() {
   const backendUrl = useMemo(
-    () => import.meta.env.VITE_BACKEND_URL || "http://localhost:8000",
+    () => import.meta.env.VITE_BACKEND_URL || "http://https://autonomous-product-intelligence-system.onrender.com",
     []
   );
 

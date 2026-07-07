@@ -9,7 +9,7 @@ function SettingsPage() {
 
           <tr>
             <td><strong>Backend URL</strong></td>
-            <td>http://localhost:8000</td>
+            <td>http://https://autonomous-product-intelligence-system.onrender.com</td>
           </tr>
 
           <tr>
