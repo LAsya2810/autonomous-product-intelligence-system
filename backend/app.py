@@ -17,23 +17,21 @@ UPLOAD_DIR = BASE_DIR / "uploads"
 
 app = FastAPI(title="Product Intelligence AI API")
 
-origins = [
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins = [
     "https://autonomous-product-intelligence-system-zeh3zw314.vercel.app",
     "https://autonomous-product-intelligence-system-fa053sual.vercel.app",
     "http://localhost:3000",
     "http://localhost:5173"
-]
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 @app.get("/health")
-def health_check():
+def health():
     return {"status": "ok", "message": "Product Intelligence AI API is running."}
 
 
