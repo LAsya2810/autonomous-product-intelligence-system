@@ -162,8 +162,9 @@ function AIAnalystPage() {
                       : 'AI Analyst'}
                   </strong>
 
-                  {message.role === 'assistant' && 
-                  }
+                  {message.role === 'assistant' && (
+                    <span>AI Assistant</span>
+                    )}
 
                 </div>
 
