@@ -39,3 +39,46 @@ cd backend
 Autonomous Product Intelligence & Decision Support System is an AI-powered platform that uses RAG, semantic search, and LLM reasoning to analyze product documents, customer feedback, and technical reports.
 
 The system enables intelligent document retrieval, automated insights generation, and decision support for product teams.
+## Features
+
+- PDF document upload and processing
+- AI-powered question answering
+- Retrieval-Augmented Generation (RAG)
+- Semantic search using embeddings
+- BM25 keyword retrieval
+- Automated report generation
+- Product insights dashboard
+- Document-based reasoning
+##ARCHITECTURE
+  Documents
+    ↓
+Chunking
+    ↓
+Embeddings
+    ↓
+SQLite Storage
+    ↓
+Retriever
+(BM25 + Semantic Search)
+    ↓
+LLM
+    ↓
+Answer / Report
+Tech Stack
+## Tech Stack
+
+Frontend:
+- React
+- Vite
+- Chart.js
+- jsPDF
+
+Backend:
+- FastAPI
+- SQLite
+
+AI:
+- OpenAI
+- Sentence Transformers
+- RAG
+- BM25
