@@ -34,3 +34,8 @@ Open http://localhost:5173/ to view the app.
 cd backend
 .\.venv\Scripts\python.exe scripts/generate_sample_documents.py
 ```
+## Overview
+
+Autonomous Product Intelligence & Decision Support System is an AI-powered platform that uses RAG, semantic search, and LLM reasoning to analyze product documents, customer feedback, and technical reports.
+
+The system enables intelligent document retrieval, automated insights generation, and decision support for product teams.
