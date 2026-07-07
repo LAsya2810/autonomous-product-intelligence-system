@@ -49,8 +49,8 @@ The system enables intelligent document retrieval, automated insights generation
 - Automated report generation
 - Product insights dashboard
 - Document-based reasoning
-##ARCHITECTURE
-  Documents
+## Architecture
+Documents
     ↓
 Chunking
     ↓
@@ -64,7 +64,6 @@ Retriever
 LLM
     ↓
 Answer / Report
-Tech Stack
 ## Tech Stack
 
 Frontend:
