@@ -46,19 +46,20 @@ function App() {
   }, [location.pathname]);
 
   useEffect(() => {
-    const endpoint = import.meta.env.VITE_BACKEND_URL || 'https://autonomous-product-intelligence-system.onrender.com'
+  const backendUrl =
+    import.meta.env.VITE_BACKEND_URL ||
+    "https://autonomous-product-intelligence-system.onrender.com";
 
-    fetch(endpoint)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Health check failed');
-        }
-        return response.json();
-      })
-      .then(() => setBackendStatus('Backend connected'))
-      .catch(() => setBackendStatus('Backend unavailable'));
-  }, []);
-
+  fetch(`${backendUrl}/health`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Health check failed");
+      }
+      return response.json();
+    })
+    .then(() => setBackendStatus("Backend connected"))
+    .catch(() => setBackendStatus("Backend unavailable"));
+}, []);
   return (
     <div className="app-shell">
       <aside className="sidebar">
